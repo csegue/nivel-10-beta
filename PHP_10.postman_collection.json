@@ -1,0 +1,149 @@
+{
+	"info": {
+		"_postman_id": "cd07b395-f147-4625-a94d-71519a1de9aa",
+		"name": "PHP_10",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Listado",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{ip}}/catalogos",
+					"host": [
+						"{{ip}}"
+					],
+					"path": [
+						"catalogos"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Show",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{ip}}\\catalogos\\17",
+					"host": [
+						"{{ip}}"
+					],
+					"path": [
+						"catalogos",
+						"17"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Store",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "autor",
+							"value": "Antonio",
+							"type": "text"
+						},
+						{
+							"key": "titulo",
+							"value": "El mar",
+							"type": "text"
+						},
+						{
+							"key": "gereno",
+							"value": "Divulgativo",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "{{ip}}/catalogos/create",
+					"host": [
+						"{{ip}}"
+					],
+					"path": [
+						"catalogos",
+						"create"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "autor",
+							"value": "El lobo malo",
+							"type": "text"
+						},
+						{
+							"key": "titulo",
+							"value": "Caperucita",
+							"type": "text"
+						},
+						{
+							"key": "genero",
+							"value": "Terror infantil",
+							"type": "text"
+						},
+						{
+							"key": "_method",
+							"value": "PUT",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "{{ip}}/catalogos/17",
+					"host": [
+						"{{ip}}"
+					],
+					"path": [
+						"catalogos",
+						"17"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{ip}}/catalogos/17",
+					"host": [
+						"{{ip}}"
+					],
+					"path": [
+						"catalogos",
+						"17"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
